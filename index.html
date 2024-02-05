@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Go-IT-WEBSTUDIO-Homework5</title>
-    <!-- <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css"> -->
+    <title>Go-IT-WEBSTUDIO-Homework6</title>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="css/styles.css" />
     
 </head>
@@ -30,6 +30,39 @@
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button class="modal-close-btn" data-modal-close>&times;</button>
+                    <h4>Leave your contacts and we will call you back</h4>
+                    <img action="order-form" autocomplete="on" novalidate>
+                        <label for="label-name">
+                            Name
+                            <div>
+                                <img src="" alt="customer-icon">
+                                <input type="text" name="customer-name">
+                            </div>
+                        </label>
+                        <label for="lable-phone">
+                            Phone
+                            <div>
+                                <img src="" alt="customer-phone-icon">
+                                <input type="tel" name="customer-phone">
+                            </div>
+                        </label>
+                        <label for="label-email">
+                            Email
+                            <div>
+                                <img src="" alt="customer-email-icon">
+                                <input type="email" name="customer-email">
+                            </div>
+                        </label>
+                        <label for="customer-comment">
+                            Comment
+                            <div>
+                                <input type="text" name="customer-comment-box" placeholder="Text Input">
+                            </div>
+                        </label>
+                        <input type="checkbox" name="privacy-policy-checkbox">I accept the terms and conditions of the <a href="" class="privacy-policy">Privacy Policy</a></img>
+                        <button class="form-send">Send</button>
+                    </form>
+                    
                 </div>
             </div>
         </section>
@@ -288,6 +321,18 @@
                             <use xlink:href="./images/icons.svg#iconslinkedin2"></use>
                         </svg>
                     </a>
+                </div>
+            </li>
+            <li>
+                    <label for="label-subscribe">Subscribe<br>
+                        <div class="label-sub-email">
+                            <input type="email" name="subscribe-email" placeholder="Email">
+                            <button>
+                                <p>Subscribe</p>
+                                <img src="" alt="">
+                            </button>
+                        </div>
+                    </label>
                 </div>
             </li>
         </ul>

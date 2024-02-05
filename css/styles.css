@@ -272,7 +272,7 @@ button:hover, a.sect-options-link:hover{
     background-color: var(--IRIS);
     position: absolute;
     top: 58px;
-    z-index: 9999;
+    z-index: 2;
 }
 .active-port{
     color: var(--IRIS);
@@ -332,6 +332,7 @@ button:hover, a.sect-options-link:hover{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
+    z-index: 3;
     position: fixed;
     top: 0;
     display: flex;
@@ -343,6 +344,7 @@ button:hover, a.sect-options-link:hover{
 .modal{
     width: 408px;
     height: 584px;
+    padding: 40px;
     background-color: white;
     border-radius: 4px;
     position: relative;
@@ -350,6 +352,7 @@ button:hover, a.sect-options-link:hover{
 .modal-close-btn{
     position: absolute;
     background-color: var(--CLOUD);
+    border-radius: 50%;
     color: var(--NAVY-BLUE);
     border-color: var(--CLOUD);
     top: 5px;
@@ -359,4 +362,15 @@ button:hover, a.sect-options-link:hover{
 .is-hidden{
     pointer-events: none;
     opacity:0;
+}
+
+/* Subsribe Form */
+.label-sub-email{
+    display: flex;
+    padding: 20px 0;
+}
+/* form css */
+.form-send{
+    color: white;
+    padding: 10px 50px;
 }
