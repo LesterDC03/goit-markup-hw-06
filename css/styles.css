@@ -374,3 +374,13 @@ button:hover, a.sect-options-link:hover{
     color: white;
     padding: 10px 50px;
 }
+.modal-form-title h2{
+    font-size: smaller;
+}
+.form-icon{
+    width: 18px;
+    height: 18px;
+}
+input{
+
+}
