@@ -31,44 +31,37 @@
                 <div class="modal">
                     <button class="modal-close-btn" data-modal-close>&times;</button>
                     <h4 class="modal-form-title">Leave your contacts and we will call you back</h4>
-                    <form>
-                        <div class="form-items">
-                            <label for="label-name">Name</label>
-                            <div class="form-display">
-                                <svg class="user-icon form-icon">
-                                    <use href="./images/icons.svg#iconsuser"></use>
-                                </svg>
-                                <input type="text" name="customer-name">
-                            </div>
-                        </div>
-                        <div class="form-items">
-                            <label for="label-phone">Phone</label>
-                                <div class="form-display">
-                                    <svg class="user-icon form-icon">
-                                        <use href="./images/icons.svg#iconsphone"></use>
-                                    </svg>
-                                    <input type="tel" name="customer-phone">
-                                </div>
-                        </div>
-                        <div class="form-items">
-                            <label for="label-email">Email</label>
-                            <div class="form-display">
-                                <svg class="user-icon form-icon">
-                                    <use href="./images/icons.svg#iconsenvelop"></use>
-                                </svg>
-                                <input type="email" name="customer-email">
-                            </div>
-                        </div>
-                        <div class="form-comment">
-                            <label for="label-comment">Comment</label>
-                                <div>
-                                    <input type="text" name="customer-comment-box" placeholder="Text Input">
-                                </div>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" name="privacy-policy-checkbox">I accept the terms and conditions of the <a href="" class="privacy-policy">Privacy Policy</a></form>
-                            <button class="form-send">Send</button>
-                        </div>
+                    <form class="service-form">
+                        <label for="label-name" class="service-label">
+                            <span class="input-label">Name</span>
+                            <input type="text" class="service-input">
+                            <svg class="user-icon form-icon">
+                                <use href="./images/icons.svg#iconsperson"></use>
+                            </svg>
+                        </label>                  
+                        <label for="label-name" class="service-label">
+                            <span class="input-label">Phone</span>
+                            <input type="tel" class="service-input">
+                            <svg class="phone-icon form-icon">
+                                <use href="./images/icons.svg#iconsphone"></use>
+                            </svg>
+                        </label>                  
+                        <label for="label-name" class="service-label">
+                            <span class="input-label">Email</span>
+                            <input type="email" class="service-input">
+                            <svg class="mail-icon form-icon">
+                                <use href="./images/icons.svg#iconsenvelop"></use>
+                            </svg>
+                        </label>
+                        <label class="service-label">
+                            <span class="input-label">Comment</span>
+                            <textarea class="text-area" rows="8" placeholder="Text input"></textarea>
+                        </label>
+                        <label class="privacy-label">
+                            <input type="checkbox" class="privacy-checkbox">
+                            <span class="input-label">I accept the terms and conditions of the <a href="" class="privacy-link">Privacy Notice</a></span>
+                        </label>                  
+                        <button class="form-button"><a href="" class="form-submit">Send</a></button>
                         </form>
                     
                 </div>
@@ -310,22 +303,22 @@
                 <p>Social Media</p>
                 <div class="soc-icons-footer">
                     <a class="soc-link-footer" href="https://instagram.com">
-                        <svg class="svg iconsinstagram">
+                        <svg class="svg-footer-icon iconsinstagram">
                             <use xlink:href="./images/icons.svg#iconsinstagram"></use>
                         </svg>
                     </a>
                     <a class="soc-link-footer" href="https://twitter.com">
-                        <svg class="svg iconstwitter">
+                        <svg class="svg-footer-icon iconstwitter">
                             <use xlink:href="./images/icons.svg#iconstwitter"></use>
                         </svg>
                     </a>
                     <a class="soc-link-footer" href="https://facebook.com">
-                        <svg class="svg iconsfacebook">
+                        <svg class="svg-footer-icon iconsfacebook">
                             <use xlink:href="./images/icons.svg#iconsfacebook"></use>
                         </svg>
                     </a>
                     <a class="soc-link-footer" href="https://linkedin.com">
-                        <svg class="svg iconslinkedin2">
+                        <svg class="svg-footer-icon iconslinkedin2">
                             <use xlink:href="./images/icons.svg#iconslinkedin2"></use>
                         </svg>
                     </a>
@@ -334,10 +327,12 @@
             <li>
                     <label for="label-subscribe">Subscribe<br>
                         <div class="label-sub-email">
-                            <input type="email" name="subscribe-email" placeholder="Email">
-                            <button>
-                                <p>Subscribe</p>
-                                <img src="" alt="">
+                            <input type="email" class="subscribe-email" placeholder="E-mail">
+                            <button class="send-button-sub">
+                                <a href="" class="send-icon">Subscribe</a>
+                                <svg class="send-icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#iconspaper-plane"></use>
+                                </svg>
                             </button>
                         </div>
                     </label>

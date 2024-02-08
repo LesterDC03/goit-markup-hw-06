@@ -62,7 +62,6 @@ a.butones{
     color: white;
     font-size: 18px;
     padding: 100px 50px;
-
 }
 
 h2{
@@ -203,11 +202,19 @@ h3.customers{
     margin: 12px;
     padding: 16px 32px;
 }
+.customers{
+    margin-bottom: 50px;
+}
 .list-footer-items{
     padding: 0 50px;
 }
 .soc-icons-footer{
     padding-top: 15px;
+}
+.svg-footer-icon{
+   width: 20px;
+   height: 20px; 
+   fill: white;
 }
 p.soc-icons-footer{
     line-height: 24px;
@@ -216,7 +223,7 @@ p.soc-icons-footer{
 }
 .soc-link-footer{
     margin-right: 20px;
-    padding: 15px;
+    /* padding: 15px; */
 }
 .sect-options{
     display: flex;
@@ -238,7 +245,7 @@ p.soc-icons-footer{
 button:hover, a.sect-options-link:hover{
     background-color: var(--IRIS);
     color: var(--CLOUD);
-    font-weight: 1000;
+    /* font-weight: 1000; */
 }
 .list-categories{
     display: flex;
@@ -344,19 +351,22 @@ button:hover, a.sect-options-link:hover{
 .modal{
     width: 408px;
     height: 584px;
-    padding: 40px;
+    padding: 20px;
+    padding-top: 80px;
     background-color: white;
     border-radius: 4px;
     position: relative;
 }
 .modal-close-btn{
     position: absolute;
+    width: 20px;
+    height: 20px;
     background-color: var(--CLOUD);
     border-radius: 50%;
     color: var(--NAVY-BLUE);
     border-color: var(--CLOUD);
-    top: 5px;
-    right: 5px;
+    top: 40px;
+    right: 25px;
 }
 
 .is-hidden{
@@ -374,13 +384,125 @@ button:hover, a.sect-options-link:hover{
     color: white;
     padding: 10px 50px;
 }
-.modal-form-title h2{
+
+.modal-form-title{
+    text-align: center;
+}
+
+
+.service-form{
+    padding: 10px 0;
+}
+
+.service-label{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.input-label{
+    margin-bottom: 2px;
+    color: var(--LIGHT-SLATE);
     font-size: smaller;
 }
+
 .form-icon{
-    width: 18px;
-    height: 18px;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    fill: var(--LIGHT-SLATE);
+    transition: fill 250ms cubic-bezier(0.4, 0.2, 0, 1);
+    
 }
-input{
+
+.user-icon{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 4%;
 
 }
+
+.service-input{
+    padding: 12px 40px;
+    border: 1px solid var(--LIGHT-SLATE);
+    border-radius: 4px;
+    transition: 250ms;
+    transition-property: border-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-input:focus+.form-icon,
+.service-input:hover+.form-icon{
+    fill: var(--IRIS);
+}
+
+.service-input:hover{
+    border: 1px solid var(--IRIS);
+}
+
+.text-area{
+    border: 1px solid var(--LIGHT-SLATE);
+    border-radius: 4px;
+    transition: 250ms;
+    transition-property: border-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 8px 16px;
+}
+
+.text-area:focus,
+.text-area:hover{
+    fill: var(--IRIS);
+}
+
+.text-area:hover{
+    border: 1px solid var(--IRIS);
+}
+
+.privacy-label{
+    display: flex;
+    align-items: center;
+}
+
+.privacy-checkbox{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;   
+}
+
+.form-submit{
+    color: white;   
+    padding: 12px 50px;
+}
+
+.form-button{
+    margin-top: 20px;
+}
+.send-button-sub{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: roboto, sans-serif;
+    fill: white;
+    padding: 0 20px;
+    margin-left: 20px;
+}
+
+.send-icon{
+    color: white;
+    margin: 5px 5px;
+}
+
+.subscribe-email{
+    width: 220px;
+    padding-left: 10px;
+    font-size: 12px;
+    background-color: var(--NAVY-BLUE) ;
+    color: white;
+    font:bold;
+    border: 1px solid white;
+}
+
