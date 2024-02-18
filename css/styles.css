@@ -242,7 +242,7 @@ p.soc-icons-footer{
     color: var(--IRIS);
     font-family: Roboto, sans-serif;
 }
-button:hover, a.sect-options-link:hover{
+button:hover,a.sect-options-link:hover{
     background-color: var(--IRIS);
     color: var(--CLOUD);
     /* font-weight: 1000; */
